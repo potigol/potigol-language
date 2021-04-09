@@ -1,0 +1,25 @@
+{
+    "name": "potigol-language",
+    "displayName": "Potigol Language",
+    "description": "Syntax highlighting for Potigol language",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.55.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "potigol",
+            "aliases": ["Potigol", "potigol"],
+            "extensions": [".poti",".potigol"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "potigol",
+            "scopeName": "source.potigol",
+            "path": "./syntaxes/potigol.tmLanguage.json"
+        }]
+    }
+}
