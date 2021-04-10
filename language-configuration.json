@@ -15,11 +15,7 @@
         ["[", "]"],
         ["(", ")"],
         ["\"", "\""],
-        ["'", "'"],
-        ["faca", "fim"],
-        ["faça", "fim"],
-        ["se", "fim"],
-        ["gere", "fim"]
+        ["'", "'"]
     ],
     // symbols that can be used to surround a selection
     "surroundingPairs": [
@@ -28,5 +24,9 @@
         ["(", ")"],
         ["\"", "\""],
         ["'", "'"]
-    ]
-}
+    ],
+    "indentationRules": {
+        "increaseIndentPattern": "^.*(faca|faça|entao|então|senão|senao|senãose|senaose|escolha|gere|tipo).*$|^.*\\([^)]*$|^.*\\=\\s*$",
+        "decreaseIndentPattern": "^\\s*(fim|senão|senao|senaose|senãose|\\)).*$"
+      }
+    }
