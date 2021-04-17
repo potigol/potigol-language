@@ -37,7 +37,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.potigol",            
-				"match": "\\b(se|senao|senão|fim|entao|então|senaose|senãose|enquanto|faca|faça|para|de|ate|até|gere|tipo|retorne|escolha|caso|var|escreva|imprima|passo)\\b"
+				"match": "\\b(se|senao|senão|fim|entao|então|senaose|senãose|enquanto|faca|faça|para|de|ate|até|gere|tipo}abstrato|retorne|escolha|caso|var|escreva|imprima|passo)\\b"
 			}]
 		},
 		"functions": {
@@ -49,7 +49,7 @@
 		"constants": {
 			"patterns": [{
 				"name": "constant.language.potigol",            
-				"match": "\\b(falso|verdadeiro|isto|EOF)\\b"
+				"match": "\\b(falso|verdadeiro|isto|eof|nulo)\\b"
 			}]
 		},
 		"logical": {
