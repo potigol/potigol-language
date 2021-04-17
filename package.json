@@ -2,7 +2,7 @@
     "name": "potigol-language",
     "displayName": "Potigol Language",
     "description": "Syntax highlighting for Potigol language",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "engines": {
         "vscode": "^1.55.0"
     },
