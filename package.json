@@ -1,9 +1,9 @@
 {
     "name": "potigol-language",
     "displayName": "Potigol Language",
-    "publisher": "Potigol",
+    "publisher": "potigol",
     "description": "Syntax highlighting for Potigol language",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "repository": "https://github.com/potigol/potigol-language",
     "engines": {
         "vscode": "^1.55.0"
