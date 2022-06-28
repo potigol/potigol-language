@@ -1,8 +1,10 @@
 {
     "name": "potigol-language",
     "displayName": "Potigol Language",
+    "publisher": "Potigol",
     "description": "Syntax highlighting for Potigol language",
-    "version": "0.0.2",
+    "version": "1.0.0",
+    "repository": "https://github.com/potigol/potigol-language",
     "engines": {
         "vscode": "^1.55.0"
     },
@@ -10,16 +12,27 @@
         "Programming Languages"
     ],
     "contributes": {
-        "languages": [{
-            "id": "potigol",
-            "aliases": ["Potigol", "potigol"],
-            "extensions": [".poti",".potigol"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "potigol",
-            "scopeName": "source.potigol",
-            "path": "./syntaxes/potigol.tmLanguage.json"
-        }]
-    }
+        "languages": [
+            {
+                "id": "potigol",
+                "aliases": [
+                    "Potigol",
+                    "potigol"
+                ],
+                "extensions": [
+                    ".poti",
+                    ".potigol"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "potigol",
+                "scopeName": "source.potigol",
+                "path": "./syntaxes/potigol.tmLanguage.json"
+            }
+        ]
+    },
+    "license": "MIT"
 }
