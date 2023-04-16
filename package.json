@@ -6,11 +6,12 @@
     "version": "1.1.0",
     "repository": "https://github.com/potigol/potigol-language",
     "engines": {
-        "vscode": "^1.55.0"
+        "vscode": "^1.77.0"
     },
     "categories": [
         "Programming Languages"
     ],
+    "main": "./out/extension.js",
     "contributes": {
         "languages": [
             {
@@ -32,7 +33,74 @@
                 "scopeName": "source.potigol",
                 "path": "./syntaxes/potigol.tmLanguage.json"
             }
-        ]
+        ],
+        "commands": [
+            {
+                "command": "potigol-language.run",
+                "title": "Run Code",
+                "icon": "$(play)"
+            }
+        ],
+        "menus": {
+            "editor/title/run": [
+                {
+                    "when": "editorLangId == 'potigol'",
+                    "command": "potigol-language.run",
+                    "group": "navigation"
+                }
+            ]
+        },
+        "configuration": {
+            "type": "object",
+            "title": "Potigol Configuration",
+            "properties": {
+                "potigol-language.clearPreviousOutput": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Whether to clear previous output before each run.",
+                    "scope": "resource"
+                },
+                "potigol-language.saveAllFilesBeforeRun": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Whether to save all files before running.",
+                    "scope": "resource"
+                },
+                "potigol-language.saveFileBeforeRun": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Whether to save the current file before running.",
+                    "scope": "resource"
+                },
+                "potigol-language.preserveFocus": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Whether to preserve focus on code editor after code run is triggered.",
+                    "scope": "resource"
+                }
+            }
+        }
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "pretest": "npm run compile && npm run lint",
+        "lint": "eslint src --ext ts",
+        "test": "node ./out/test/runTest.js"
+    },
+    "devDependencies": {
+        "@types/vscode": "^1.77.0",
+        "@types/glob": "^8.1.0",
+        "@types/mocha": "^10.0.1",
+        "@types/node": "16.x",
+        "@typescript-eslint/eslint-plugin": "^5.56.0",
+        "@typescript-eslint/parser": "^5.56.0",
+        "eslint": "^8.36.0",
+        "glob": "^8.1.0",
+        "mocha": "^10.2.0",
+        "typescript": "^4.9.5",
+        "@vscode/test-electron": "^2.3.0"
     },
     "license": "MIT"
 }
