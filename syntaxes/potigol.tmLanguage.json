@@ -104,7 +104,40 @@
                     			"include": "#expressions"
                			}]
         		}]
-		}
+		},
+		"expressions": {
+    			"patterns": [
+        			{
+            			"include": "#keywords"
+        			},
+        			{
+            			"include": "#functions"
+        			},
+        			{
+            			"include": "#constants"
+        			},
+        			{
+            			"include": "#logical"
+        			},
+        			{
+            			"include": "#arithmetic"
+        			},
+        			{
+            			"include": "#assignments"
+        			},
+        			{
+            			"include": "#comparison"
+        			},
+        			{
+            			"name": "variable.other.potigol",
+            			"match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b"
+        			},
+        			{
+            			"name": "constant.numeric.potigol",
+            			"match": "\\b\\d+\\b"
+        			}
+    			]
+			}
 	},
 	"scopeName": "source.potigol"
 }
