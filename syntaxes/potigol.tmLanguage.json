@@ -89,15 +89,21 @@
 		},
 
 		"strings": {
-			"name": "string.quoted.double.potigol",
-			"begin": "\"",
-			"end": "\"",
-			"patterns": [
-				{
-					"name": "constant.character.escape.potigol",
-					"match": "\\\\."
-				}
-			]
+    			"name": "string.quoted.double.potigol",
+    			"begin": "\"",
+    			"end": "\"",
+    			"patterns": [{
+            			"name": "constant.character.escape.potigol",
+            			"match": "\\\\."
+        		},
+        		{
+            			"name": "meta.interpolation.potigol",
+            			"begin": "\\{",
+            			"end": "\\}",
+            			"patterns": [{
+                    			"include": "#expressions"
+               			}]
+        		}]
 		}
 	},
 	"scopeName": "source.potigol"
