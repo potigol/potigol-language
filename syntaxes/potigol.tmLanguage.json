@@ -37,13 +37,13 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.potigol",
-				"match": "\\b(se|senao|senão|fim|entao|então|senaose|senãose|enquanto|faca|faça|para|de|em|ate|até|gere|tipo|abstrato|retorne|escolha|caso|var|escreva|imprima|passo)\\b"
+				"match": "\\b(se|sen[ãa]o|fim|ent[ãa]o|sen[ãa]ose|enquanto|fa[çc]a|para|de|em|at[ée]|gere|tipo|abstrato|retorne|escolha|caso|var|escreva|imprima|passo)\\b"
 			}]
 		},
 		"functions": {
 			"patterns": [{
 				"name": "keyword.function.potigol",
-				"match": "\\b(leia_texto|leia_numero|leia_inteiro|leia_real|leia_inteiros|leia_textos|leia_reais|inteiro|arredonde|texto|formato|real|tamanho|posição|posicao|posiçao|posicão|contém|contem|maiúsculo|maiusculo|minúsculo|minusculo|inverta|divida|cabeça|cabeca|primeiro|cauda|último|ultimo|pegue|descarte|selecione|descarte_enquanto|pegue_enquanto|ordene|junte|remova|insira|imutável|imutavel|mutável|mutavel|mapeie|injete|PI|sen|cos|tg|arcsen|arccos|arctg|abs|raiz|log|log10|segundo|terceiro|quarto|quinto|sexto)\\b"
+				"match": "\\b(leia_texto|leia_numero|leia_inteiro|leia_real|leia_inteiros|leia_textos|leia_reais|inteiro|arredonde|texto|formato|real|tamanho|posi[çc][ãa]o|cont[ée]m|mai[úu]sculomin[úu]sculo|inverta|divida|cabe[çc]a|primeiro|cauda|[úu]ltimo|pegue|descarte|selecione|descarte_enquanto|pegue_enquanto|ordene|junte|remova|insira|imut[áa]vel|mut[áa]vel|mapeie|injete|PI|sen|cos|tg|arcsen|arccos|arctg|abs|raiz|log|log10|segundo|terceiro|quarto|quinto|sexto)\\b"
 			}]
 		},
 		"constants": {
@@ -55,13 +55,13 @@
 		"logical": {
 			"patterns": [{
 				"name": "keyword.operator.logical.potigol",
-				"match": "\\b(e|ou|nao|não)\\b"
+				"match": "\\b(e|ou|n[ãa]o)\\b"
 			}]
 		},
 		"types": {
 			"patterns": [{
 				"name": "storage.type.primitive.scala",
-				"match": "\\b(Inteiro|Real|Texto|Logico|Lógico|Lista|Tupla|Matriz|Cubo)\\b"
+				"match": "\\b(Inteiro|Real|Texto|Caractere|L[óo]gico|Lista|Tupla|Matriz|Cubo)\\b"
 			}]
 		},
 		"comments": {
@@ -72,13 +72,13 @@
 		"arithmetic": {
 			"patterns": [{
 				"name": "keyword.operator.arithmetic.potigol",
-				"match": "\\b(\\+|\\-|\\*|/|mod|div|\\:\\:)\\b"
+				"match": "\\b(\\+|\\-|\\*|/|mod|div|::)\\b"
 			}]
 		},
 		"assignments": {
 			"patterns": [{
 				"name": "keyword.operator.assignment.potigol",
-				"match": "\\b(\\=|\\:=)\\b"
+				"match": "\\b(=|:=)\\b"
 			}]
 		},
 		"comparison": {
