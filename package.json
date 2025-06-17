@@ -23,7 +23,11 @@
                     ".poti",
                     ".potigol"
                 ],
-                "configuration": "./language-configuration.json"
+                "configuration": "./language-configuration.json",
+                "icon": {
+                    "light": "./icons/potigol.png",
+                    "dark": "./icons/potigol.png"
+                }
             }
         ],
         "grammars": [
