@@ -37,7 +37,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.potigol",
-				"match": "\\b(se|sen[ãa]o|fim|ent[ãa]o|sen[ãa]ose|enquanto|fa[çc]a|para|de|em|at[ée]|gere|tipo|abstrato|retorne|escolha|caso|var|escreva|imprima|passo)\\b"
+				"match": "\\b(se|sen[ãa]o|fim|ent[ãa]o|sen[ãa]ose|enquanto|fa[çc]a|para|de|em|at[ée]|gere|tipo|abstrato|retorne|escolha|caso|var|def|val|escreva|imprima|passo)\\b"
 			}]
 		},
 		"functions": {
